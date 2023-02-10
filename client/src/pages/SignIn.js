@@ -13,12 +13,13 @@ const SignIn = () => {
   return (
     <div className='signin'>
       <div className='signin__container'>
+      <p className='signin__tos'>The Turing Bate Papo</p>
         <button className="signin__btn flex items-center justify-center" onClick={signInWithGoogle}>
           <FcGoogle className='m-2' />
           Sign in with Google
         </button>
 
-        <p className='signin__tos'>The Turing Chatbot</p>
+        
       </div>
     </div>
   )
