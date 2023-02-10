@@ -12,7 +12,7 @@ const ChatView = () => {
   const inputRef = useRef()
   const [formValue, setFormValue] = useState('')
   const [thinking, setThinking] = useState(false)
-  const options = ['ChatGPT', 'DALL·E']
+  const options = ['openAI', 'DALL·E']
   const [selected, setSelected] = useState(options[0])
   const [messages, addMessage, , , setLimit] = useContext(ChatContext)
   const user = auth.currentUser.uid
@@ -55,7 +55,7 @@ const ChatView = () => {
     const newMsg = formValue
     const aiModel = selected
 
-    const BASE_URL = process.env.REACT_APP_BASE_URL
+    const BASE_URL = "https://turingbatepapo.onrender.com/"
     const PATH = aiModel === options[0] ? 'davinci' : 'dalle'
     const POST_URL = BASE_URL + PATH
 

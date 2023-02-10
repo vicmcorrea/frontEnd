@@ -44,7 +44,7 @@ const SideBar = () => {
           <span className='w-8 h-8'><img src={bot} alt="" /></span>
         </div>
         <h1 className={`sidebar__app-title ${!open && "scale-0 hidden"}`}>
-          GPT3-Chatbot
+          The Turing - Chat
         </h1>
         <div className='sidebar__btn-close' onClick={() => setOpen(!open)}>
           {open ? <MdClose className='sidebar__btn-icon' /> : <MdMenu className='sidebar__btn-icon' />}
@@ -56,7 +56,7 @@ const SideBar = () => {
           <div className='nav__icons'>
             <MdAdd />
           </div>
-          <h1 className={`${!open && "hidden"}`}>New chat</h1>
+          <h1 className={`${!open && "hidden"}`}>Resetar Conversa</h1>
         </span>
       </div>
       {limit >= 0 &&
@@ -69,20 +69,13 @@ const SideBar = () => {
 
       <div className="nav__bottom">
         <DarkMode open={open} />
+        
         <div className="nav">
-          <a href='https://www.buymeacoffee.com/eyuel' rel="noreferrer" target='_blank' className="nav__item">
-            <div className="nav__icons">
-              <MdOutlineCoffee />
-            </div>
-            <h1 className={`${!open && "hidden"}`}>Support this project</h1>
-          </a>
-        </div>
-        <div className="nav">
-          <a href='https://github.com/EyuCoder/chatgpt-clone' className="nav__item">
+          <a href='https://theturing.com.br/' className="nav__item">
             <div className="nav__icons">
               <MdOutlineQuestionAnswer />
             </div>
-            <h1 className={`${!open && "hidden"}`}>Update & FAQ</h1>
+            <h1 className={`${!open && "hidden"}`}>Contato</h1>
           </a>
         </div>
         <div className="nav">

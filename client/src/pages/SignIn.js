@@ -18,7 +18,7 @@ const SignIn = () => {
           Sign in with Google
         </button>
 
-        <p className='signin__tos'>Do not violate the community guidelines or you will be banned for life!</p>
+        <p className='signin__tos'>The Turing Chatbot</p>
       </div>
     </div>
   )
